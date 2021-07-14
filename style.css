@@ -152,7 +152,9 @@ Highlights css style
 /********************\
 videos css style
 \********************/
-
+.video-area {
+	margin-bottom: 50px;
+}
 .container3{
     padding: 0px 156px 20px 182px;
 
@@ -163,7 +165,7 @@ videos css style
 	gap: 25px;
 }
 iframe{
-    /* width: 240px; */
+    width: 100%;
     margin-right: 20px;
 }
 
@@ -206,7 +208,6 @@ Gallery css style
 	display: grid;
 	grid-template-columns: auto auto auto;
 	gap: 50px;
-    /* clip-path: polygon(100% 0%,100% 95%,0% 100%,0% 5%); */
 }
 
 /********************\
@@ -238,9 +239,18 @@ footer{
 
 
 
+/********************\
+    media query
+\********************/
+
+
+/* for mobile screen  */
+
 @media only screen and (max-width:688px) {
     .container,.container1,.container2{
         width: 100%;
+    }
+    .container2{
         padding: 0px 16px;
     }
     .bar{
@@ -280,11 +290,6 @@ footer{
         margin-right: 31px;
     }
 
-
-
-
-
-
     .main-card, .videos,.all-images{
         grid-template-columns: repeat(1,1fr);
     }
@@ -306,11 +311,9 @@ footer{
         width: 328px;
         height: 248px;
     }
-    .single-card {
-        width: 300px;
-        height: 474px;
+    .single-image {
+        width: 100%;
     }
-
     .sponsorarea {
         padding: 30px 0px;
     }
@@ -320,20 +323,53 @@ footer{
     .all-sponsor h2 {
         font-size: 30px;
     }
-    .single-image {
-        width: 330px;
-    }
     .footer {
         height: 63px;
         width: 330px;
     }
 
+}
 
 
-
-
-
-
-
+/* for tab screen  */
+@media only screen and (min-width:689px) and (max-width:992px){
+    .main-card, .all-images,.videos,.sponsors.all-images{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .menu-item ul li {
+        margin-right: 25px;
+    }
+    .container1{
+        width: 100%;
+    }
+    .container {
+        width: 100%;
+        margin: 0 auto;
+        padding: 0px 10px;
+    }
+    .container2 {
+        width: 100%;
+    }
+    iframe {
+        width: 100%;
+    }
+    .headings h1 {
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+    .player {
+        height: 297px;
+        width: 542px;
+    }
+    .hilight-heading h1 {
+        font-size: 35px;
+    }
+    .hilight-img {
+        width: 523px;
+        height: 364px;
+    }
+    .all-images {
+        gap: 25px;
+    }
 
 }
