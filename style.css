@@ -123,6 +123,12 @@ header {
     background: #E02C6D;
     color: white;
 }
+.button:hover {
+	transition: 1s;
+	background: white;
+	color: #E02C6D;
+	border: 1px solid #0087ff;
+}
 .button .fa-sign-out-alt {
     margin-right: 8px;
 }
