@@ -14,7 +14,7 @@ common css style
 }
 body{
     font-family: 'Poppins', sans-serif;
-}
+    overflow-x: hidden;}
 ul{
     list-style: none;
 }
@@ -33,7 +33,9 @@ img {
 	justify-content: space-between;
 	align-items: center;
 }
-
+.bar {
+    display: none;
+}
 /******************\
 Top header css style
 \******************/
@@ -124,8 +126,9 @@ card css style
 Highlights css style
 \********************/
 .container2{
-    padding: 86px 156px 20px 182px;
-
+    /* padding: 86px 156px 20px 182px; */
+    width: 1102px;
+    margin: 0 auto;
 }
 .highlight {
 	margin-bottom: 148px;
@@ -231,4 +234,106 @@ footer{
 .footer p {
 	font-size: 18px;
 	margin-bottom: 63px;
+}
+
+
+
+@media only screen and (max-width:688px) {
+    .container,.container1,.container2{
+        width: 100%;
+        padding: 0px 16px;
+    }
+    .bar{
+        display: block;
+    }
+    .bar span {
+        height: 4px;
+        width: 33px;
+        background: red;
+        display: block;
+        margin-bottom: 6px;
+    }
+    .menu-item {
+        padding-top: 36px;
+    }
+    .ul {
+        text-align: center;
+        display: none;
+    }
+    .menu-item ul li {
+        display: block;
+    }
+    .banner {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .headings h1 {
+	font-size: 36px;
+    margin-bottom: 20px;
+    }
+    .player {
+        height: 259px;
+        width: 329px;
+        margin-top: 124px;
+    }
+    .button {
+        margin-right: 31px;
+    }
+
+
+
+
+
+
+    .main-card, .videos,.all-images{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+
+    .highlight {
+        margin-bottom: 148px;
+        flex-direction: column;
+        align-items: start;
+    }
+    .hilight-heading {
+        width: 329px;
+        height: 299px;
+    }
+    .hilight-heading h1 {
+        font-size: 30px;
+    }
+    .hilight-img {
+        width: 328px;
+        height: 248px;
+    }
+    .single-card {
+        width: 300px;
+        height: 474px;
+    }
+
+    .sponsorarea {
+        padding: 30px 0px;
+    }
+    .sponsors {
+        flex-direction: column;
+    }
+    .all-sponsor h2 {
+        font-size: 30px;
+    }
+    .single-image {
+        width: 330px;
+    }
+    .footer {
+        height: 63px;
+        width: 330px;
+    }
+
+
+
+
+
+
+
+
+
 }
