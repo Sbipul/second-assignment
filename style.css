@@ -250,7 +250,9 @@ footer{
     .container,.container1,.container2{
         width: 100%;
     }
-
+    .container2{
+        padding: 0;
+    }
     .bar{
         display: block;
     }
@@ -301,12 +303,13 @@ footer{
     .hilight-heading {
         width: 329px;
         height: 299px;
+        margin-bottom: 29px;
     }
     .hilight-heading h1 {
         font-size: 30px;
     }
     .hilight-img {
-        width: 328px;
+        width: 100%;
         height: 248px;
     }
     .single-image {
