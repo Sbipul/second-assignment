@@ -250,9 +250,7 @@ footer{
     .container,.container1,.container2{
         width: 100%;
     }
-    .container2{
-        padding: 0px 16px;
-    }
+
     .bar{
         display: block;
     }
