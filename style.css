@@ -91,16 +91,6 @@ animation and keyframes css style
 	animation: bipul 2s infinite;
 }
 
-/*
-.animation {
-	position: absolute;
-	height: 46px;
-	width: 49px;
-	border: 4px solid aqua;
-	top: 13%;
-	right: 29.7%;
-	animation: bipul 2s infinite;
-} */
 .animation2 {
 	width: 100px;
 	position: absolute;
@@ -213,7 +203,6 @@ card css style
 Highlights css style
 \********************/
 .container2{
-    /* padding: 86px 156px 20px 182px; */
     width: 1102px;
     margin: 0 auto;
 }
@@ -433,6 +422,9 @@ footer{
         height: 63px;
         width: 330px;
     }
+    .animation{
+        display: none;
+    }
     .animation2{
         display: none;
     }
@@ -480,8 +472,16 @@ footer{
     .all-images {
         gap: 25px;
     }
+    .animation{
+        display: none;
+    }
     .animation2{
         display: none;
     }
 
 }
+
+
+/********************\
+       The End
+\********************/
