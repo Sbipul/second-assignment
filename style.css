@@ -109,6 +109,10 @@ Top header css style
 header {
     background: rgb(22, 80, 187);
 }
+header:hover {
+	background: linear-gradient(to right,#4268fd,#df3654,rgb(81, 159, 226));
+	transition: 1s;
+}
 .menu-item {
     padding-top: 42px;
 }
